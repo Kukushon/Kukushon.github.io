@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Ссылки</title>
+</head>
+
+<body>
+  <ul>
+    <li><a href="http://kubsu.ru/index.php" title="главная">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
+    <li><a href="https://kubsu.ru/">Абсолютная на главную сайта kubsu.ru в протоколе https</a></li>
+    <li><a href="https://www.techinsider.ru/popmem/1571931-50-ochen-smeshnyh-snimkov-kotov-eti-pushistye-huligany-stali-zvezdami-seti/" title="котики"><img 
+        src="https://i.pinimg.com/736x/1d/47/c5/1d47c5877fe0ba2481dadf5cf98c1bb0.jpg" height="10%" width="10%"></a></li>
+    <li><a href="/index.html" title="внутренняя">Сокращенная ссылка на внутреннюю странцу</a></li>
+    <li><a href="/" title="главная">Сокращенная ссылка на главную страницу</a></li>
+    <li><a href="#" title="фрагмент">Ссылка на фрагмент текущей страницы</a></li>
+    <li><a href="http://www.site.ru/?t=k&h=e&b=q" title="с параметрами">Ссылка с тремя параметрами в URL</a></li>
+    <li><a href="http://www.site.ru/?id=187" title="с id">Ссылка с параметром id в URL</a></li>
+    <li><a href="./index.html" title="на страницу">Относительная ссылка на страницу в текущем каталоге</a></li>
+    <li><a href="/about" title="about">Относительная ссылка на страницу в каталоге about</a></li>
+    <li><a href="../index.html" title="уровнем выше">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+    <li><a href="../../index.html" title="2 уровня выше">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+    <li>Это контекстная <a href="http://kubsu.ru/" title="кубгу">ссылка</a> в тексте абзаца</li>
+    <li><a href="http://drugoi.site.ru/index.html#idshnik" title="фрагмент">Ссылка на фрагмент страницы стороннего сайта</a></li>
+    <li><img src="https://ru.meming.world/images/ru/thumb/c/c2/%D0%97%D0%B0%D0%B3%D1%80%D1%83%D0%B6%D0%B0%D1%8E%D1%89%D0%B8%D0%B9%D1%81%D1%8F_%D0%BA%D0%BE%D1%82_%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD.jpg/300px-%D0%97%D0%B0%D0%B3%D1%80%D1%83%D0%B6%D0%B0%D1%8E%D1%89%D0%B8%D0%B9%D1%81%D1%8F_%D0%BA%D0%BE%D1%82_%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD.jpg"
+          width="200"
+          height="200"
+          alt="KubSu"
+          usemap="#cat"
+        >
+        <map name="cat">
+            <area shape="circle" coords="180,120,20" alt="circle" href="http://kubsu.ru/index.php" title="кубгу">
+            <area shape="rect" coords="0,0,100,200" alt="rect" href="https://www.techinsider.ru/popmem/1571931-50-ochen-smeshnyh-snimkov-kotov-eti-pushistye-huligany-stali-zvezdami-seti/" title="котики">
+        </map>
+    </li>
+    <li><a href="" title="пустой href">Ссылка с пустым href</a></li>
+    <li><a title="пусто">Ссылка без href</a></li>
+    <li><a href="/" rel="nofollow" title="запрещен переход">Ссылка, по которой запрещен переход поисковикам</a></li>
+    <li><a href="/" rel="noindex" title="запрещена индексация">Запрещенная для индексации поисковиками</a></li>
+    </ul>
+      <ol>
+        <li>
+          <a href="http://kubsu.ru/" title="заголовок 1">Первая ссылка</a>
+    </li>
+    <li>
+      <a href="http://kubsu.ru/" title="заголовок 2">Вторая ссылка</a>
+    </li>
+    </ol>
+    <ul>
+      <li>
+        <a href="ftp://user:password@primer.com/failik.txt" title="сервер ftp">Ссылка на файл на сервере FTP с авторизацией</a
+        >
+      </li>
+    </ul>
+    <h1>Форма</h1>
+<form action="#" method="post">
+    <label for="fio">ФИО:</label>
+    <input type="text" id="fio" name="fio" required><br>
+
+    <label for="phone">Телефон:</label>
+    <input type="tel" id="phone" name="phone" required><br>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="birthdate">Дата рождения:</label>
+    <input type="date" id="birthdate" name="birthdate" required><br>
+
+    <label>Пол:</label>
+    <input type="radio" id="male" name="gender" value="male" checked>
+    <label for="male">Мужской</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Женский</label>
+    <br>
+
+    <label for="programming-languages">Любимый язык программирования:</label>
+    <select id="programming-languages" name="programming-languages[]" multiple="multiple" required>
+        <option value="Pascal">Pascal</option>
+        <option value="C">C</option>
+        <option value="C++">C++</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="PHP">PHP</option>
+        <option value="Python">Python</option>
+        <option value="Java">Java</option>
+        <option value="Haskell">Haskell</option>
+        <option value="Clojure">Clojure</option>
+        <option value="Prolog">Prolog</option>
+        <option value="Scala">Scala</option>
+    </select><br />
+    <label for="biography">Биография:</label><br>
+    <textarea id="biography" name="biography" rows="4" cols="50"></textarea><br>
+
+    <input type="checkbox" id="contract" name="contract" required>
+    <label for="contract">С контрактом ознакомлен(а)</label><br>
+
+    <input type="submit" value="Сохранить">
+</form>
+</body>
+</html>
