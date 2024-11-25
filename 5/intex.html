@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Калькулятор</title>
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <h1>Калькулятор стоимости заказа</h1>
+        <link rel="stylesheet" href="style.css">
+
+        <div class="input-group">
+            <label for="quantity">Количество: </label>
+            <input type="number" id="quantity" min="1" value="1">
+        </div>
+        <div class="input-group">
+        <label for="product">Цветок: </label>
+            <select id="product">
+                <option value="300">Альстромерия</option>
+                <option value="1500">Гортензия</option>
+                <option value="700">Пион</option>
+                <option value="350">Гвоздика</option>
+            </select>
+        </div>
+
+        <button id="button">Рассчитать стоимость</button>
+
+        <p id="cost"></p>
+  </div>
+
+  <div class="images">
+    <div class="image-item">
+      <img src="https://labflower.com/upload/styles/goods_list/public/flowers/img_6824.jpeg?itok=J8ik2Acp.jpg" alt="Альстромерия">
+      <p>Альстромерия (300 руб.)</p>
+    </div>
+    <div class="image-item">
+      <img src="https://static.insales-cdn.com/images/products/1/7875/847552195/APC_4654__1_.jpg" alt="Гортензия">
+      <p>Гортензия (1500 руб.)</p>
+    </div>
+    <div class="image-item">
+      <img src="https://obradoval.ru/upload/products/2680/IMG-2855-664608e75aa58-s-product-96e56dd6ad5b259893b0afa8a6780572.jpg" alt="Пион">
+      <p>Пион (700 руб.)</p>
+    </div>
+    <div class="image-item">
+      <img src="https://labflower.com/upload/styles/goods_list/public/flowers/img_6834.jpeg?itok=Xb2VtYyA.jpg" alt="Гвоздика">
+      <p>Гвоздика (350 руб.)</p>
+    </div>
+  </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
