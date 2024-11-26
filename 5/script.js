@@ -1,49 +1,22 @@
-function calculateCost() {
+function calculateCost() { 
+    const quantityInput = document.getElementById("quantity"); 
+    const quantity = parseFloat(quantityInput.value); 
+    const productPrice = parseFloat(document.getElementById("product").value); 
 
-      const quantityInput = document.getElementById("quantity");
-
-      const quantity = document.getElementById("quantity").value;
-
-      const productPrice = document.getElementById("product").value;
-
-
-
-      // Проверка ввода: 
-
-      if (isNaN(quantity) || quantity <= 0 || quantity % 1 !== 0) {
-
-        quantityInput.classList.add("error");
-
-        document.getElementById("cost").innerHTML = "";
-
-        document.getElementById("error").innerHTML = "Пожалуйста, введите целое положительное число для количества!";
-
-        return;
-
-      }
-
-      else {
-
-        quantityInput.classList.remove("error");
-
-      }
-
-
-
-      const cost = quantity * productPrice;
-
-      document.getElementById("cost").innerHTML = "Стоимость заказа: " + cost + " руб.";
-
-      document.getElementById("error").innerHTML = ""; // Очищаем сообщение об ошибке
-
+    // Проверка на валидность количества
+    if (isNaN(quantity) || quantity <= 0 || !Number.isInteger(quantity)) {
+        document.getElementById("error").innerHTML = "Ошибка: введите положительное целое количество.";
+        document.getElementById("cost").innerHTML = ""; // Очищаем стоимость при ошибке
+        return; // Прерываем выполнение функции
     }
 
-    window.addEventListener('DOMContentLoaded', function (event) {
+    const cost = quantity * productPrice; 
+    document.getElementById("cost").innerHTML = "Стоимость заказа: " + cost + " руб."; 
+    document.getElementById("error").innerHTML = ""; // Очищаем сообщение об ошибке 
+} 
 
-      console.log("DOM fully loaded and parsed");
-
-      let b = document.getElementById("button");
-
-      b.addEventListener("click", calculateCost);
-
-    });
+window.addEventListener('DOMContentLoaded', function (event) { 
+    console.log("DOM fully loaded and parsed"); 
+    let b = document.getElementById("button"); 
+    b.addEventListener("click", calculateCost); 
+});
