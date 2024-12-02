@@ -1,0 +1,104 @@
+html, body {
+  height: 100%;
+}
+body {
+  background-image: url("fon.jpg");
+  background-repeat: repeat;
+  background-size: 30%;
+}
+#error {
+  color: black;
+}
+#quantity.error {
+  border: 2px solid rgb(79, 14, 14);
+}
+#cost {
+  font-weight: bold;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #8B6D5C;
+}
+.input-group,
+.radioknopki,
+.checkb,
+.select-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.input-group label,
+.select-group label {
+  margin-right: 5px;
+}
+
+.input-group input,
+.input-group select,
+.select-group select {
+  padding: 8px;
+  border: 1px solid #5A3D30;
+  border-radius: 3px;
+}
+.radioknopki, 
+.checkb {
+  display: flex;
+  flex-direction: row;
+}
+.rad,
+.ckeckbox {
+  padding: 5px;
+  margin-inline: 10px;
+}
+#button {
+  background-color: #5A3D30;
+  color: #ccc;
+  padding: 10px 20px;
+  border: none; 
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer; 
+}
+#button:hover {
+  background-color: #5A3D30;
+}
+#button:active {
+  background-color: #45322E;
+}
+#button {
+  transition: background-color 0.1s ease;
+}
+.images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-height: 300px;
+}
+.image-item {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 20%;
+  text-align: center;
+}
+.image-item img {
+  width: 100%;
+  border-radius: 15px;
+}
+.image-item p {
+  background-color: #8B6D5C;
+  padding: 5px 10px;
+  border-radius: 5px;
+}

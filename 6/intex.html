@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Калькулятор</title>
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <h1>Калькулятор</h1>
+        <link rel="stylesheet" href="style.css">
+
+        <div class="input-group">
+            <label for="quantity">Количество: </label>
+            <input type="number" id="quantity" min="1" value="1">
+        </div>
+        <div class="input-group">
+        <label for="product">Цветок: </label>
+            <select id="product" name="product-number">
+                <option value="1">Альстромерия</option>
+                <option value="2">Гортензия</option>
+                <option value="3">Пион</option>
+                <option value="4">Гвоздика</option>ы
+            </select>
+        </div>
+        <div class="radioknopki"> 
+            <div class="rad">
+                <input type="radio" id="fastdelivery" name="servicetype" value="500">
+                <label for="fastdelivery">Быстрая доставка</label>
+            </div>
+            <div class="rad">
+                <input type="radio" id="delivery" name="servicetype" value="300" checked>
+                <label for="delivery">Доставка</label>
+            </div>
+            <div class="rad">
+                <input type="radio" id="pickup" name="servicetype" value="0" checked>
+                <label for="pickup">Самовывоз</label>
+            </div>
+        </div>
+
+        <div class="select-group" id="productOptions">
+           <label for="color">Цвет: </label>
+            <select id="color" name="color">
+            </select>
+        </div>
+        <div class="checkb" id="checkpackage">
+            <input type="checkbox" id="package">
+            <label for="package">Добавить пленку и крафт-бумагу?</label><br>
+        </div>
+
+        <p id="cost"></p>
+        <p id="error"></p>
+  </div>
+
+  <div class="images">
+    <div class="image-item">
+      <img src="https://labflower.com/upload/styles/goods_list/public/flowers/img_6824.jpeg?itok=J8ik2Acp.jpg" alt="Альстромерия">
+      <p>Альстромерия (300 руб.)</p>
+    </div>
+    <div class="image-item">
+      <img src="https://static.insales-cdn.com/images/products/1/7875/847552195/APC_4654__1_.jpg" alt="Гортензия">
+      <p>Гортензия (1500 руб.)</p>
+    </div>
+    <div class="image-item">
+      <img src="https://obradoval.ru/upload/products/2680/IMG-2855-664608e75aa58-s-product-96e56dd6ad5b259893b0afa8a6780572.jpg" alt="Пион">
+      <p>Пион (700 руб.)</p>
+    </div>
+    <div class="image-item">
+      <img src="https://labflower.com/upload/styles/goods_list/public/flowers/img_6834.jpeg?itok=Xb2VtYyA.jpg" alt="Гвоздика">
+      <p>Гвоздика (350 руб.)</p>
+    </div>
+  </div>
+
+</div>
+<script src="script.js" defer></script>
+</body>
+</html>
