@@ -6,9 +6,6 @@ body {
   background-repeat: repeat;
   background-size: 30%;
 }
-#error {
-  color: black;
-}
 #quantity.error {
   border: 3px solid rgb(79, 14, 14);
 }
