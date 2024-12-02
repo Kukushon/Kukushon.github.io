@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
       1: {
           price: 300,
           options: [],
-          showPackage: true
+          showPackage: false
       },
       2: {
           price: 1500,
