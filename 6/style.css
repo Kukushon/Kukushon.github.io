@@ -10,7 +10,7 @@ body {
   color: black;
 }
 #quantity.error {
-  border: 4px solid rgb(79, 14, 14);
+  border: 3px solid rgb(79, 14, 14);
 }
 #cost {
   font-weight: bold;
@@ -26,7 +26,7 @@ body {
   align-items: center;
   width: 100%;
   max-width: 600px;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   border-radius: 5px;
   background-color: #8B6D5C;
 }
