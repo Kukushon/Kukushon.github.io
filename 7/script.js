@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
           prevEl: '.swiper-button-prev',
         },
         loop: true,
-        loopedSlides: 8, 
+        loopedSlides: 7, 
     });  
     const currentPage = document.querySelector('.current-page');
     const totalPages = document.querySelector('.total-pages');
